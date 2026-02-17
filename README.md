@@ -129,3 +129,6 @@ No. The `/l` flag only affects user-constructed regular expressions. ECMAScriptâ
 
 **Q**: Why does this need to be built-in, instead of being implemented in JavaScript?
 **A**: Linear-time guarantees for all patterns cannot be reliably implemented in user-space using standard JavaScript `RegExp`. Polyfills can only check patterns or reimplement engines partially, often with significant performance overhead. A native implementation ensures consistent behavior and performance across browsers and Node.js.
+
+## Specification
+
