@@ -1,0 +1,23 @@
+{
+    "name": "proposal-regular-expression-linear-time-flag",
+    "description": "Regular Expression Linear-Time Flag for ECMAScript.",
+    "private": true,
+    "homepage": "https://github.com/tc39/proposal-regular-expression-linear-flag",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tc39/proposal-regular-expression-linear-flag.git"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">= 18"
+    },
+    "scripts": {
+        "start": "npm run build-loose -- --watch",
+        "build": "npm run build-loose -- --strict",
+        "build-loose": "node -e 'fs.mkdirSync(\"build\", { recursive: true })' && ecmarkup --load-biblio @tc39/ecma262-biblio --verbose spec.emu build/index.html --lint-spec"
+    },
+    "devDependencies": {
+        "@tc39/ecma262-biblio": "^2.1.3022",
+        "ecmarkup": "^23.0.2"
+    }
+}

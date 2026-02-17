@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<pre class="metadata">
+    title: RegExp Linear-Time Flag
+    stage: 3
+    contributors: Aleksandr Abashkin
+    markEffects: true
+</pre>
+
+<emu-clause id="sec-text-processing" number="22">
+  <h1>Text Processing</h1>
+
+  <emu-clause id="sec-regexp-objects" number="2">
+    <h1>RegExp (Regular Expression) Objects</h1>
+
+    <emu-clause id="sec-regexp-prototype-properties" number="6">
+      <h1>Properties of the RegExp Prototype Object</h1>
+
+      <emu-clause id="sec-regexp-linearTime-get" number="20">
+        <h1>get RegExp.prototype.linearTime</h1>
+        <p>The value of the [[Get]] attribute is a built-in function that returns <code>true</code> if the regular expression was constructed with the <code>/l</code> flag, and <code>false</code> otherwise.</p>
+        <emu-alg>
+          1. Let _R_ be the this value.
+          1. If _R_ is not an Object, throw a *TypeError* exception.
+          1. If _R_ has the internal slot [[RegExpLinearTime]] set to true, return <code>true</code>.
+          1. Otherwise, return <code>false</code>.
+        </emu-alg>
+      </emu-clause>
+
+    </emu-clause>
+  </emu-clause>
+</emu-clause>
