@@ -133,3 +133,8 @@ No. The `/l` flag only affects user-constructed regular expressions. ECMAScriptâ
 ## Specification
 
 [RegExp.prototype.linearTime](https://monolithed.github.io/proposal-regular-expression-linear-time-flag/)
+
+
+## References
+
+[arXiv:2311.17620v2 [cs.PL] 23 Jul 2024](https://arxiv.org/pdf/2311.17620)
