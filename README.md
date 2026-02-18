@@ -94,7 +94,7 @@ catch (error) {
 
 - Applies only to newly constructed regular expressions.
 - Patterns using unsupported features (backreferences, lookaheads, lookbehinds) throw at construction.
-- Existing regular expressions without /l continue using the standard backtracking engine.
+- Existing regular expressions without `/l` continue using the standard backtracking engine.
 - `RegExp.prototype.linearTime` is read-only and reflects whether `/l` was used.
 
 
