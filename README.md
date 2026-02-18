@@ -12,7 +12,7 @@ Aleksandr Abashkin
 
 ## Summary
 
-The `/l` flag enables linear-time matching using a finite automaton engine that explores all possible matches simultaneously, eliminating catastrophic backtracking.
+The `/l` flag enables [linear-time matching](https://arxiv.org/pdf/2311.17620) using a finite automaton engine that explores all possible matches simultaneously, eliminating catastrophic backtracking.
 A read-only `Boolean` property `RegExp.prototype.linearTime` is provided to indicate whether a regular expression was constructed with `/l`.
 
 ## Motivation
