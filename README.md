@@ -114,8 +114,7 @@ V8 [provides](https://v8.dev/blog/non-backtracking-regexp) an experimental linea
 node -e '/(a*)*b/l.test("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac")' --enable-experimental-regexp-engine
 ```
 
-**Note:** The engine only checks for unsupported patterns when run with the experimental flag. This demonstrates that while linear-time regex execution is possible in JavaScript, **an opt-in mechanism is required to ensure safety** without breaking existing code.
-
+This demonstrates that support for linear-time regex execution can be included in the standard.
 
 ## Does this proposal affect ECMAScript lexing?
 
