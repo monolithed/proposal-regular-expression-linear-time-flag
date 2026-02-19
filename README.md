@@ -81,9 +81,7 @@ Unsupported flag triggers `SyntaxError`:
 try {
   const pattern = /(a+)*b/l; // SyntaxError: Invalid regular expression flags
 }
-catch (error) {
-  console.log('Pattern not allowed with /l');
-}
+catch (error) {}
 ```
 
 ## Syntax
