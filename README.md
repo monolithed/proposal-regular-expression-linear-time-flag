@@ -75,11 +75,11 @@ const pattern = new RegExp('abc+', 'l');
 console.log(pattern.linearTime); // true
 ```
 
-Unsupported pattern triggers `SyntaxError`:
+Unsupported flag triggers `SyntaxError`:
 
 ```js
 try {
-  const pattern = /(a+)*b/l; // SyntaxError: pattern unsupported for linear matching
+  const pattern = /(a+)*b/l; // SyntaxError: Invalid regular expression flags
 }
 catch (error) {
   console.log('Pattern not allowed with /l');
