@@ -75,7 +75,7 @@ const pattern = new RegExp('abc+', 'l');
 console.log(pattern.linearTime); // true
 ```
 
-Unsupported flag triggers `SyntaxError`:
+**Feature detection**:
 
 ```js
 const isLinearRegexFlagSupported = () => {
