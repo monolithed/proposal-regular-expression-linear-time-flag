@@ -78,11 +78,19 @@ console.log(pattern.linearTime); // true
 Unsupported flag triggers `SyntaxError`:
 
 ```js
-try {
-  const pattern = /(a+)*b/l; // SyntaxError: Invalid regular expression flags
-}
-catch (error) {}
+const isLinearRegexFlagSupported = () => {
+    try { 
+          new RegExp('', 'l'); 
+
+          return true; 
+    }
+    catch (error /* SyntaxError: Invalid flags supplied to RegExp constructor */) { 
+         return false;  
+    }
+};
 ```
+
+This is exactly like any other unsupported flag. If an engine hasn't implemented the linear-time flag, it's simply an invalid flag.
 
 ## Syntax
 
