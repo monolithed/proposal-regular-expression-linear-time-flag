@@ -47,12 +47,6 @@ When the `/l` flag is used:
 1. Matching MUST execute in time linear in the length of the input.
 2. The presence of the `l` flag is otherwise processed according to the existing RegExp flag validation rules.
 
-This design ensures that:
-- All `/l` regular expressions are safe from ReDoS attacks.
-- Behavior is consistent across all conforming implementations.
-- Developers have a simple way to write secure regular expressions.
-- Existing code continues to work unchanged.
-
 
 ## Use cases
 
