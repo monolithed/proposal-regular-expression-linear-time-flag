@@ -44,11 +44,8 @@ Regular expressions without the flag continue to use the standard backtracking e
 
 When the `/l` flag is used:
 
-1. The regular expression MUST be executed using an algorithm that guarantees linear time complexity relative to the input length.
-
-2. If the pattern contains features that cannot be implemented with such an algorithm (e.g., backreferences, lookahead, lookbehind), a `SyntaxError` is thrown at construction time.
-
-3. This validation occurs at construction, not at execution time, ensuring that developers can safely detect unsupported patterns during development.
+1. Matching MUST execute in time linear in the length of the input.
+2. The presence of the `l` flag is otherwise processed according to the existing RegExp flag validation rules.
 
 This design ensures that:
 - All `/l` regular expressions are safe from ReDoS attacks.
